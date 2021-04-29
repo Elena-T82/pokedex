@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <div class="page">
+
+        {{>header}}
+
+        <section class="content">
+            {{{body}}}
+        </section>
+
+        {{>footer}}
+    </div>
+
+</body>
+
+</html>
+
+
+
+{{!-- IMPORTANT
+
+2 accolades = récupérer variable js envoyés
+3 accolades = récupérer ce qu'il y a dans un autre fichier handlebars
+2 accolades + > = récuppérer partials
+
+--}}

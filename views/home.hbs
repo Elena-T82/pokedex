@@ -1,0 +1,13 @@
+
+    <h1>Pokedex</h1>
+
+    <ol class="pokedex">
+        {{!-- #each est pour lancer une boucle sur nos pokemons --}}
+        {{#each pokemons.results}}
+
+        <li><a href="/{{this.name}}">{{capitalize this.name}}</li></a>
+
+        {{/each}}
+    </ol>
+
+{{!-- cette page utilise main.handlebars --}}
